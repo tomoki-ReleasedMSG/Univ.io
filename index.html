@@ -9,24 +9,22 @@
       margin: 0;
       height: 100vh;
       display: flex;
-      justify-content: center;   /* 横方向センター */
-      align-items: center;       /* 縦方向センター */
+      justify-content: center;
+      align-items: center;
       font-family: system-ui, sans-serif;
       background: #f2f2f2;
     }
 
-    /* 本文：一番長い行にフィットして中央配置、内部は左寄せ */
     .message {
       width: fit-content;
       text-align: left;
       line-height: 1.7;
     }
 
-    /* 署名：右端に揃え、さらに全角1文字分の余白を追加 */
     .author {
       text-align: right;
       font-weight: 500;
-      padding-right: 1em; /* ← 全角1文字分のスペース */
+      white-space: pre;  /* ← ここがポイント */
     }
   </style>
 </head>
@@ -36,7 +34,7 @@
     お世話になっております。<br>
     参照したいURLが3行を超えていますので、添付資料に詳細を記入しています。<br>
     よろしくお願いします。<br>
-    <div class="author">@tomoki</div>
+    <div class="author">@tomoki　</div> <!-- ← 本物の全角スペース1文字 -->
   </div>
 </body>
 </html>
