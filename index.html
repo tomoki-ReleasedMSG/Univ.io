@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,10 @@
   <style>
     body {
       margin: 0;
-      padding: 40px 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;   /* 横方向センター */
+      align-items: center;       /* 縦方向センター */
       font-family: system-ui, sans-serif;
       background: #f2f2f2;
     }
@@ -15,15 +18,12 @@
     /* 本文：一番長い行にフィットして中央配置、内部は左寄せ */
     .message {
       width: fit-content;
-      margin: 0 auto;
       text-align: left;
       line-height: 1.7;
     }
 
-    /* 署名：本文と同じ幅にフィットし、右寄せ */
+    /* 署名：本文ブロックの右端に揃える */
     .author {
-      width: fit-content;
-      margin: 10px auto 0;
       text-align: right;
       font-weight: 500;
     }
@@ -34,11 +34,9 @@
   <div class="message">
     お世話になっております。<br>
     参照したいURLが3行を超えていますので、添付資料に詳細を記入しています。<br>
-    よろしくお願いします。
-  </div>
-
-  <div class="author">
-    @tomoki
+    よろしくお願いします。<br>
+    <div class="author">@tomoki</div>
   </div>
 </body>
 </html>
+﻿
