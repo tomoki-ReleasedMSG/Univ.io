@@ -1,10 +1,44 @@
-﻿<body>
-  <div style="width: fit-content; margin: 0 auto; text-align: left;">
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Message</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 0;
+      font-family: system-ui, sans-serif;
+      background: #f2f2f2;
+    }
+
+    /* 本文ブロック：一番長い行にフィットして中央配置 */
+    .message {
+      width: fit-content;
+      margin: 0 auto;
+      text-align: left;
+      line-height: 1.7;
+    }
+
+    /* 署名ブロック：同じ幅で右寄せ */
+    .author {
+      width: fit-content;
+      margin: 10px auto 0;
+      text-align: right;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="message">
     お世話になっております。<br>
     参照したいURLが3行を超えていますので、添付資料に詳細を記入しています。<br>
     よろしくお願いします。
   </div>
-  <div style="width: fit-content; margin: 0 auto; text-align: right;">
+
+  <div class="author">
     @tomoki
   </div>
 </body>
+</html>
