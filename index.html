@@ -9,8 +9,8 @@
       margin: 0;
       height: 100vh;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: center;   /* 横方向センター */
+      align-items: center;       /* 縦方向センター */
       font-family: system-ui, sans-serif;
       background: #f2f2f2;
     }
@@ -24,7 +24,7 @@
     .author {
       text-align: right;
       font-weight: 500;
-      white-space: pre;  /* ← ここがポイント */
+      white-space: pre; /* ← これでスペースが無視されない */
     }
   </style>
 </head>
@@ -34,7 +34,7 @@
     お世話になっております。<br>
     参照したいURLが3行を超えていますので、添付資料に詳細を記入しています。<br>
     よろしくお願いします。<br>
-    <div class="author">@tomoki;</div> 
+    <div class="author">@tomoki&nbsp;</div> <!-- ← 半角スペース1文字分 -->
   </div>
 </body>
 </html>
